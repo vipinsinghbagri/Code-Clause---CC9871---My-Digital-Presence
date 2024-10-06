@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipin's Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #004aad;
+        }
+        section {
+            padding: 3rem 2rem;
+        }
+        
+        /* Header */
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0db4f;
+        }
+
+        /* About Me Section */
+        #about {
+            background-color: #fff;
+            text-align: center;
+        }
+        #about img {
+            width: 150px;
+            border-radius: 50%; 
+            border : solid green 3px;
+            padding : 0.09%;
+            margin-top: 1rem;
+            box-shadow: 10 4px 8px green ;
+        }
+        #about p {
+            width: 60%;
+            margin: 1rem auto;
+            color: #555;
+        }
+        #about ul {
+            list-style: none;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        #about ul li {
+            background-color: #004aad;
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #e9f5ff;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+        .project-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project-card h3 {
+            color: #004aad;
+            margin-bottom: 1rem;
+        }
+        .project-card p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .project-card a {
+            padding: 10px 20px;
+            background-color: #004aad;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .project-card a:hover {
+            background-color: #00398d;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #f0f4f8;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 1rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #004aad;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #00398d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004aad;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #f0db4f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQF9LB-x1A_y7w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727024840625?e=1733961600&v=beta&t=lrXlyBf_cQgkTfTvQ7vFzZ2AZpj43VSn3JyaOGhQFGw" alt="Vipin Bagri">
+        <p>Hi, I'm <strong>Vipin Bagri</strong>, a 2nd-year Bachelor of Computer Applications (BCA) student with a strong interest in web development and software technologies. I'm constantly learning and building projects to expand my knowledge in full-stack development, especially JavaScript frameworks, and database management.</p>
+        <ul>
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (Intermediate)</li>
+            <li>React (Learning)</li>
+            <li>Node.js</li>
+            <li>Chrome Extensions</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Interactive Quiz Website</h3>
+                <p>Developed a web-based quiz game using JavaScript. Users can answer multiple-choice questions and get feedback on their scores.</p>
+                <a href="https://github.com/vipinsinghbagri" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Created this responsive portfolio using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                <a href="https://drive.google.com/drive/folders/1Q9V_2zI4ajYiW6DBElJk79gd8QZpI9AI?usp=drive_link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Chrome Extension </h3>
+                <p>Developed a Chrome plugin to track the amount of time spent on different websites, Helps users manage their online time better.</p>
+                <a href="https://github.com/vipinsinghbagri/chrome-extension" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Vipin Bagri. All rights reserved.</p>
+        <div>
+            <a href="https://github.com/vipinsinghbagri" target="_blank">GitHub</a> |
+            <a href="www.linkedin.com/in/vipin-bagri-aa1150277" target="_blank">LinkedIn</a> |
+            <a href="mailto:vipinbagri541@gmail.com">Email Me</a>
+        </div>
+    </footer>
+
+    <!-- JS for Form Submission (Optional) -->
+    <script>
+        const form = document.getElementById("contact-form");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message ! We will connect with you very soon ..");
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>
